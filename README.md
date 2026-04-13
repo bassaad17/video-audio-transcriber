@@ -48,7 +48,7 @@ A simple tool to transcribe locally saved MP4 videos or MP3 audio files to text 
 Drop your MP4 files into the `videos/` folder, then run:
 
 ```
-python transcribe-video-audio.py
+python transcribe.py
 ```
 
 This will:
@@ -61,34 +61,34 @@ This will:
 
 - `--video`: Transcribe a single video file
   ```
-  python transcribe-video-audio.py --video path/to/your/video.mp4
+  python transcribe.py --video path/to/your/video.mp4
   ```
 
 - `--videos_dir`: Specify a custom directory of videos (default: `videos`)
   ```
-  python transcribe-video-audio.py --videos_dir path/to/video/directory
+  python transcribe.py --videos_dir path/to/video/directory
   ```
 
 - `--output_dir`: Specify a custom output directory (default: `output`)
   ```
-  python transcribe-video-audio.py --output_dir path/to/output/directory
+  python transcribe.py --output_dir path/to/output/directory
   ```
 
 - `--model`: Specify the Whisper model size (default: `small`)
   ```
-  python transcribe-video-audio.py --model medium
+  python transcribe.py --model medium
   ```
 
 ### Examples
 
 Transcribe a specific video using the medium model:
 ```
-python transcribe-video-audio.py --video videos/lecture.mp4 --model medium
+python transcribe.py --video videos/lecture.mp4 --model medium
 ```
 
 Transcribe all videos in a custom directory:
 ```
-python transcribe-video-audio.py --videos_dir my_videos --output_dir my_transcripts
+python transcribe.py --videos_dir my_videos --output_dir my_transcripts
 ```
 
 ---
@@ -100,7 +100,7 @@ python transcribe-video-audio.py --videos_dir my_videos --output_dir my_transcri
 Drop your MP3 files into the `audios/` folder, then run:
 
 ```
-python transcribe-video-audio.py --mode audio
+python transcribe.py --mode audio
 ```
 
 This will:
@@ -112,39 +112,39 @@ This will:
 
 - `--audio`: Transcribe a single MP3 file
   ```
-  python transcribe-video-audio.py --audio path/to/your/audio.mp3
+  python transcribe.py --audio path/to/your/audio.mp3
   ```
 
 - `--audios_dir`: Specify a custom directory of MP3 files (default: `audios`)
   ```
-  python transcribe-video-audio.py --mode audio --audios_dir path/to/audio/directory
+  python transcribe.py --mode audio --audios_dir path/to/audio/directory
   ```
 
 - `--output_dir`: Specify a custom output directory (default: `output`)
   ```
-  python transcribe-video-audio.py --mode audio --output_dir path/to/output/directory
+  python transcribe.py --mode audio --output_dir path/to/output/directory
   ```
 
 - `--model`: Specify the Whisper model size (default: `small`)
   ```
-  python transcribe-video-audio.py --mode audio --model medium
+  python transcribe.py --mode audio --model medium
   ```
 
 ### Examples
 
 Transcribe a specific MP3 file:
 ```
-python transcribe-video-audio.py --audio audios/interview.mp3
+python transcribe.py --audio audios/interview.mp3
 ```
 
 Transcribe all MP3s in the default audios folder using the large model:
 ```
-python transcribe-video-audio.py --mode audio --model large
+python transcribe.py --mode audio --model large
 ```
 
 Transcribe all MP3s in a custom folder:
 ```
-python transcribe-video-audio.py --mode audio --audios_dir my_recordings --output_dir my_transcripts
+python transcribe.py --mode audio --audios_dir my_recordings --output_dir my_transcripts
 ```
 
 ---
@@ -156,7 +156,7 @@ python transcribe-video-audio.py --mode audio --audios_dir my_recordings --outpu
 Pass a YouTube URL directly:
 
 ```
-python transcribe-video-audio.py --url "https://www.youtube.com/watch?v=VIDEO_ID"
+python transcribe.py --url "https://www.youtube.com/watch?v=VIDEO_ID"
 ```
 
 This will:
@@ -169,29 +169,29 @@ This will:
 
 - `--url`: The YouTube video URL (required for this mode)
   ```
-  python transcribe-video-audio.py --url "https://www.youtube.com/watch?v=VIDEO_ID"
+  python transcribe.py --url "https://www.youtube.com/watch?v=VIDEO_ID"
   ```
 
 - `--model`: Specify the Whisper model size (default: `small`)
   ```
-  python transcribe-video-audio.py --url "https://www.youtube.com/watch?v=VIDEO_ID" --model medium
+  python transcribe.py --url "https://www.youtube.com/watch?v=VIDEO_ID" --model medium
   ```
 
 - `--output_dir`: Specify a custom output directory (default: `output`)
   ```
-  python transcribe-video-audio.py --url "https://www.youtube.com/watch?v=VIDEO_ID" --output_dir my_transcripts
+  python transcribe.py --url "https://www.youtube.com/watch?v=VIDEO_ID" --output_dir my_transcripts
   ```
 
 ### Examples
 
 Transcribe a YouTube video using the medium model:
 ```
-python transcribe-video-audio.py --url "https://www.youtube.com/watch?v=VIDEO_ID" --model medium
+python transcribe.py --url "https://www.youtube.com/watch?v=VIDEO_ID" --model medium
 ```
 
 You can also use `--mode youtube` explicitly alongside `--url`:
 ```
-python transcribe-video-audio.py --mode youtube --url "https://www.youtube.com/watch?v=VIDEO_ID"
+python transcribe.py --mode youtube --url "https://www.youtube.com/watch?v=VIDEO_ID"
 ```
 
 > **Note:** Only single videos are supported. Playlist URLs will be treated as a single video (the playlist is ignored).
@@ -205,7 +205,7 @@ VideoAudioTranscriber/
 ├── videos/       # Place MP4 video files here for batch processing
 ├── audios/       # Place MP3 audio files here for batch processing
 ├── output/       # Transcription .txt files are saved here
-└── transcribe-video-audio.py
+└── transcribe.py
 ```
 
 > YouTube mode downloads a temporary `yt_temp_audio.mp3` into `output/` during processing and deletes it automatically once transcription is complete.
