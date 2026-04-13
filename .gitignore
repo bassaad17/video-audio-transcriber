@@ -1,9 +1,6 @@
 # macOS
 .DS_Store
 
-# Personal notes
-gitrepolink-videotranscriber.txt
-
 # Folder contents (keep folder structure via .gitkeep)
 audios/*
 !audios/.gitkeep
