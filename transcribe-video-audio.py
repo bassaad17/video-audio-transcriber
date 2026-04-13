@@ -249,7 +249,7 @@ def main():
             process_directory(args.videos_dir, args.output_dir, args.model)
 
 
+# Main execution
 if __name__ == "__main__":
     main()
 
-# Main execution
