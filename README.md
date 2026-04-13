@@ -1,6 +1,6 @@
 # Video & Audio Transcriber
 
-A simple tool to transcribe locally saved MP4 videos or MP3 audio files to text using OpenAI's Whisper model and ffmpeg.
+A simple tool to transcribe locally saved MP4 videos, MP3 audio files, or YouTube videos to text using OpenAI's Whisper model and ffmpeg.
 
 ## Features
 
@@ -17,9 +17,7 @@ A simple tool to transcribe locally saved MP4 videos or MP3 audio files to text 
 - ffmpeg installed on your system
 - Required Python packages (install via `pip install -r requirements.txt`):
   - openai-whisper
-  - ffmpeg-python
   - yt-dlp
-  - pathlib
 
 ## Installation
 
