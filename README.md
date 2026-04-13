@@ -215,3 +215,10 @@ VideoAudioTranscriber/
 - For large files, transcription may take time depending on your hardware
 - The `large` model provides the most accurate transcription but requires more computational resources
 - Available model sizes: `tiny`, `base`, `small` (default), `medium`, `large`
+
+## Acknowledgements
+
+- [openai/whisper](https://github.com/openai/whisper) — speech recognition model used for transcription
+- [ffmpeg](https://ffmpeg.org) — used for audio extraction from video files
+- [harliandi/video-transcriber](https://github.com/harliandi/video-transcriber) — referenced for video transcription approach
+- [javedali99/audio-to-text-transcription](https://github.com/javedali99/audio-to-text-transcription?tab=readme-ov-file) — referenced for audio transcription approach
