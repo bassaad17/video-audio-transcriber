@@ -1,6 +1,9 @@
 # macOS
 .DS_Store
 
+# vscode
+.vscode/*
+
 # Folder contents (keep folder structure via .gitkeep)
 audios/*
 !audios/.gitkeep

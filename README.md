@@ -14,7 +14,7 @@ A simple tool to transcribe locally saved MP4 videos, MP3 audio files, or YouTub
 
 ## Requirements
 
-- Python 3.9+
+- Python 3.10+
 - ffmpeg installed on your system
 - Required Python packages (install via `pip install -r requirements.txt`):
   - openai-whisper
