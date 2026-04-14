@@ -1,4 +1,4 @@
-# Video & Audio Transcriber
+# Video 📽️ and Audio 🔉 Transcriber 📝
 
 A simple tool to transcribe locally saved MP4 videos, MP3 audio files, or YouTube videos to text using OpenAI's Whisper model and ffmpeg.
 
