@@ -6,6 +6,7 @@ A simple tool to transcribe locally saved MP4 videos, MP3 audio files, or YouTub
 
 - Process individual MP4 video files or entire directories
 - Process individual MP3 audio files or entire directories
+- Process individual YouTube video URLs
 - Extract audio from video using ffmpeg
 - Transcribe audio using OpenAI's Whisper model
 - Save transcriptions as text (`.txt`) files
@@ -24,7 +25,7 @@ A simple tool to transcribe locally saved MP4 videos, MP3 audio files, or YouTub
 1. Clone this repository:
    ```
    git clone <repository-url>
-   cd VideoAudioTranscriber
+   cd video-audio-transcriber
    ```
 
 2. Install required dependencies:
